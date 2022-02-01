@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Change filenames</title>
+        <link rel = "stylesheet" 
+            href = "../../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+        <div class = "container mt-2">
+            <div class="row text-center mt-2">
+                <h1>Rename all files on folder!</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 m-auto text-center" style="
+                background-color: #5856d6;
+                color: white;
+                border-radius: 5px 20px 5px;
+                /* height: 60%; */
+                font-size: -webkit-xxx-large;">
+                    1
+                </div>
+                <div class="col-10">
+                    <form id="part1" class="my-4">
+                        <label for="inputDirectory" class="form-label">Directory</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text" style="background-color: #5ac8fa;">
+                                <button class="form-control" id="inputDirectory" >Choose folder...</button>
+                            </div>
+                            <input type="text" class="form-control" id="inputDirectoryPath" aria-label="Directory path" disabled  style="background-color: #5ac8fa;"/>
+                        </div>
+                        <button id="btnGenerateCSV" name="btnGenerateCSV" type="button" class="btn btn-primary" disabled>Generate csv file!</button>
+                    </form>           
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 m-auto text-center"style="
+                background-color: #5856d6;
+                color: white;
+                border-radius: 5px 20px 5px;
+                /* height: 60%; */
+                font-size: -webkit-xxx-large;">
+                    2
+                </div>
+                <div class="col-10">
+                    <form id="part2" class="my-4">
+                        <label for="inputCSV" class="form-label">CVS file</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-text" style="background-color: #5ac8fa;">
+                                <button class="form-control" id="inputCSV">Choose file...</button>
+                            </div>
+                            <input type="text" class="form-control" id="inputCSVPath" aria-label="File path" disabled style="background-color: #5ac8fa;"/>
+                        </div>
+                        <button id="btnUploadCSV" name="btnUploadCSV" type="button" class="btn btn-primary" disabled>Change names!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 text-center">
+                <p style="font-size: small;">
+                    This application was developed by TechniK PEru Team <a href="mailto:elio.linarez@tk-peru.com">Elio Linarez</a>
+                </p>
+            </div>
+            <script src = "./view.js" ></script>
+        </div>
+    </body>
+</html>
